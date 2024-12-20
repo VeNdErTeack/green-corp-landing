@@ -4,6 +4,7 @@ body {
 	margin: 0;
 
 }
+
 header {
 	display: flex;
 	justify-content: space-between;
@@ -16,9 +17,10 @@ header {
 }
 
 a {
-text-decoration: none;
-color: #213053;
+	text-decoration: none;
+	color: #213053;
 }
+
 header a {
 	font-size: 15px;
 	font-weight: 600;
@@ -36,10 +38,15 @@ button {
 	box-shadow: 0 16px 36px rgb(52 213 68 / 22%);
 	padding: 15px;
 }
-
-.about__image {
-width: 500px;
+button:hover{
+	background-color: #f6980c;
+	box-shadow: 0 16px 36px rgba(246 152 12/20%);
+	transition: background-color 0.3s ease-in;
 }
+.about__image {
+	width: 500px;
+}
+
 .about__sun-image {
 	width: 100px;
 	height: 100px;
@@ -52,16 +59,18 @@ width: 500px;
 	padding-top: 115px;
 	padding-bottom: 115px;
 }
+
 .about h1 {
 	font-size: 70px;
 	line-height: 76px;
 }
 
-.about p{
+.about p {
 	font-size: 18px;
 	line-height: 30px;
 	opacity: 0.8;
 }
+
 .about button {
 	font-size: 18px;
 	border-radius: 20px;
@@ -80,4 +89,110 @@ width: 500px;
 	background: url('img/back.png') no-repeat;
 	background-position: center;
 	background-size: cover;
+}
+
+.form__container {
+	width: 550px;
+}
+
+.form {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	background-color: #1D263A;
+	color: #fff;
+	padding-top: 115px;
+	padding-bottom: 115px;
+	text-align: center;
+}
+
+.form h1 {
+	font-size: 48px;
+}
+
+.form p {
+	font-size: 18px;
+	opacity: 0.65;
+}
+
+.form__group {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	font-size: 18px;
+	font-weight: 600;
+	padding: 15px;
+}
+
+.form label {
+	font-size: 18px;
+	font-weight: 600;
+	margin: 15px;
+}
+
+.form input {
+	font-size: 18px;
+	color: #213053;
+	height: 60px;
+	padding: 0px 20px 0px 20px;
+	border-radius: 15px;
+	border: none;
+}
+
+.form select {
+	font-size: 18px;
+	color: #213053;
+	height: 60px;
+	padding: 0px 20px 0px 20px;
+	border-radius: 15px;
+	border: none;
+}
+
+.form__submit {
+	font-size: 18px;
+	font-weight: 600;
+	margin-top: 40px;
+}
+
+select {
+	appearance: none;
+}
+
+input {
+	outline: none;
+}
+
+footer{
+	padding:90 20 90 20;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.footer__container{
+	display: flex;
+	justify-content: center;
+}
+.footer__copyright{
+	margin-top: 40px;
+	text-align: center;
+	opacity: 0.5;
+}
+
+.footer__group{
+	margin-right: 80px;
+}
+
+.footer__group h3{
+	font-size: 16px;
+	opacity: 0.7;
+	margin-bottom: 30px;
+}
+.footer__links{
+	display: flex;
+	flex-direction: column;
+}
+
+.footer__links a{
+	margin-bottom: 15px;
 }
